@@ -14,6 +14,7 @@
 		E8CFD051287374B10011AD33 /* SampleAppForXCUITestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD050287374B10011AD33 /* SampleAppForXCUITestTests.swift */; };
 		E8CFD05B287374B10011AD33 /* SampleAppForXCUITestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD05A287374B10011AD33 /* SampleAppForXCUITestUITests.swift */; };
 		E8CFD05D287374B10011AD33 /* SampleAppForXCUITestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD05C287374B10011AD33 /* SampleAppForXCUITestUITestsLaunchTests.swift */; };
+		E8CFD06C287376F10011AD33 /* TextFieldsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD06B287376F10011AD33 /* TextFieldsDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		E8CFD056287374B10011AD33 /* SampleAppForXCUITestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppForXCUITestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8CFD05A287374B10011AD33 /* SampleAppForXCUITestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppForXCUITestUITests.swift; sourceTree = "<group>"; };
 		E8CFD05C287374B10011AD33 /* SampleAppForXCUITestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppForXCUITestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E8CFD06B287376F10011AD33 /* TextFieldsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldsDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,8 @@
 		E8CFD03E287374AF0011AD33 /* SampleAppForXCUITest */ = {
 			isa = PBXGroup;
 			children = (
+				E8CFD06A287376790011AD33 /* Views */,
+				E8CFD069287376720011AD33 /* Models */,
 				E8CFD03F287374AF0011AD33 /* SampleAppForXCUITestApp.swift */,
 				E8CFD041287374AF0011AD33 /* ContentView.swift */,
 				E8CFD043287374B10011AD33 /* Assets.xcassets */,
@@ -125,6 +129,21 @@
 				E8CFD05C287374B10011AD33 /* SampleAppForXCUITestUITestsLaunchTests.swift */,
 			);
 			path = SampleAppForXCUITestUITests;
+			sourceTree = "<group>";
+		};
+		E8CFD069287376720011AD33 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E8CFD06B287376F10011AD33 /* TextFieldsDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E8CFD06A287376790011AD33 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +278,7 @@
 			files = (
 				E8CFD042287374AF0011AD33 /* ContentView.swift in Sources */,
 				E8CFD040287374AF0011AD33 /* SampleAppForXCUITestApp.swift in Sources */,
+				E8CFD06C287376F10011AD33 /* TextFieldsDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
