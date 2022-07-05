@@ -12,9 +12,10 @@
 		E8CFD044287374B10011AD33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8CFD043287374B10011AD33 /* Assets.xcassets */; };
 		E8CFD047287374B10011AD33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8CFD046287374B10011AD33 /* Preview Assets.xcassets */; };
 		E8CFD051287374B10011AD33 /* SampleAppForXCUITestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD050287374B10011AD33 /* SampleAppForXCUITestTests.swift */; };
-		E8CFD05B287374B10011AD33 /* SampleAppForXCUITestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD05A287374B10011AD33 /* SampleAppForXCUITestUITests.swift */; };
 		E8CFD05D287374B10011AD33 /* SampleAppForXCUITestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD05C287374B10011AD33 /* SampleAppForXCUITestUITestsLaunchTests.swift */; };
 		E8CFD06C287376F10011AD33 /* TextFieldsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD06B287376F10011AD33 /* TextFieldsDataModel.swift */; };
+		E8CFD06E287440280011AD33 /* BMICalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD06D287440280011AD33 /* BMICalc.swift */; };
+		E8CFD07228744EC90011AD33 /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD07128744EC90011AD33 /* ToDoList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +44,10 @@
 		E8CFD04C287374B10011AD33 /* SampleAppForXCUITestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppForXCUITestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8CFD050287374B10011AD33 /* SampleAppForXCUITestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppForXCUITestTests.swift; sourceTree = "<group>"; };
 		E8CFD056287374B10011AD33 /* SampleAppForXCUITestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppForXCUITestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8CFD05A287374B10011AD33 /* SampleAppForXCUITestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppForXCUITestUITests.swift; sourceTree = "<group>"; };
 		E8CFD05C287374B10011AD33 /* SampleAppForXCUITestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppForXCUITestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E8CFD06B287376F10011AD33 /* TextFieldsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldsDataModel.swift; sourceTree = "<group>"; };
+		E8CFD06D287440280011AD33 /* BMICalc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalc.swift; sourceTree = "<group>"; };
+		E8CFD07128744EC90011AD33 /* ToDoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +127,6 @@
 		E8CFD059287374B10011AD33 /* SampleAppForXCUITestUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E8CFD05A287374B10011AD33 /* SampleAppForXCUITestUITests.swift */,
 				E8CFD05C287374B10011AD33 /* SampleAppForXCUITestUITestsLaunchTests.swift */,
 			);
 			path = SampleAppForXCUITestUITests;
@@ -142,6 +143,8 @@
 		E8CFD06A287376790011AD33 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E8CFD06D287440280011AD33 /* BMICalc.swift */,
+				E8CFD07128744EC90011AD33 /* ToDoList.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -278,7 +281,9 @@
 			files = (
 				E8CFD042287374AF0011AD33 /* ContentView.swift in Sources */,
 				E8CFD040287374AF0011AD33 /* SampleAppForXCUITestApp.swift in Sources */,
+				E8CFD07228744EC90011AD33 /* ToDoList.swift in Sources */,
 				E8CFD06C287376F10011AD33 /* TextFieldsDataModel.swift in Sources */,
+				E8CFD06E287440280011AD33 /* BMICalc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +299,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8CFD05B287374B10011AD33 /* SampleAppForXCUITestUITests.swift in Sources */,
 				E8CFD05D287374B10011AD33 /* SampleAppForXCUITestUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
