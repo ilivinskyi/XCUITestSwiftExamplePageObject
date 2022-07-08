@@ -15,12 +15,10 @@ struct ContentView: View {
                 .tabItem {
                     Label("BMI Calc", systemImage: "heart.fill")
                 }
-                .accessibilityIdentifier("bmiCalcTab")
-            ToDoList()
+            LoginPage()
                 .tabItem {
-                    Label("ToDo list", systemImage: "checkmark.circle")
+                    Label("Login", systemImage: "person.fill")
                 }
-                .accessibilityIdentifier("toDoList")
         }
     }
     

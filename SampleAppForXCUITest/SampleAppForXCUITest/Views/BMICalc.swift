@@ -17,21 +17,28 @@ struct BMICalc: View {
     var body: some View {
         VStack {
             HStack {
-                Spacer()
-                Text("Input your height in cm")
+                Text("Height (cm)")
+                    .font(.title2)
                 TextField("Height", value: $height, formatter: NumberFormatter())
                     .keyboardType(.numberPad)
+                    .padding()
+                    .background(Color.lightGray)
+                    .cornerRadius(5.0)
+                    .padding(.bottom, 20)
                     .accessibilityIdentifier("heightTextField")
-                Spacer()
             }
+            .padding()
             HStack {
-                Spacer()
-                Text("Input your weight in kg")
+                Text("Weight (kg)")
+                    .font(.title2)
                 TextField("Weight", value: $weight, formatter: NumberFormatter())
                     .keyboardType(.numberPad)
+                    .padding()
+                    .background(Color.lightGray)
+                    .cornerRadius(5.0)
+                    .padding(.bottom, 20)
                     .accessibilityIdentifier("weightTextField")
-                Spacer()
-            }
+            }.padding()
             Spacer()
             VStack {
                 if !resultHidden {
@@ -54,7 +61,7 @@ struct BMICalc: View {
                     bmiValue = calculateBMI()
                     resultHidden = false
                 }) {
-                    Text("Calculate BMI")
+                    GreenButton(buttonText: "Calculate BMI")
                 }
                 .padding()
                 .accessibilityIdentifier("calculateButton")

@@ -12,10 +12,17 @@
 		E8CFD044287374B10011AD33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8CFD043287374B10011AD33 /* Assets.xcassets */; };
 		E8CFD047287374B10011AD33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8CFD046287374B10011AD33 /* Preview Assets.xcassets */; };
 		E8CFD051287374B10011AD33 /* SampleAppForXCUITestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD050287374B10011AD33 /* SampleAppForXCUITestTests.swift */; };
-		E8CFD05D287374B10011AD33 /* SampleAppForXCUITestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD05C287374B10011AD33 /* SampleAppForXCUITestUITestsLaunchTests.swift */; };
-		E8CFD06C287376F10011AD33 /* TextFieldsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD06B287376F10011AD33 /* TextFieldsDataModel.swift */; };
+		E8CFD05D287374B10011AD33 /* BMICalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD05C287374B10011AD33 /* BMICalcTests.swift */; };
 		E8CFD06E287440280011AD33 /* BMICalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD06D287440280011AD33 /* BMICalc.swift */; };
-		E8CFD07228744EC90011AD33 /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD07128744EC90011AD33 /* ToDoList.swift */; };
+		E8CFD07228744EC90011AD33 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD07128744EC90011AD33 /* LoginPage.swift */; };
+		E8CFD0792874BBC10011AD33 /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD0782874BBC10011AD33 /* BaseTest.swift */; };
+		E8CFD07B2874BC800011AD33 /* XCUIElement+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD07A2874BC800011AD33 /* XCUIElement+Extension.swift */; };
+		E8CFD07D2874BCB80011AD33 /* BMIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD07C2874BCB80011AD33 /* BMIScreen.swift */; };
+		E8CFD07F2874BCC90011AD33 /* NavigationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD07E2874BCC90011AD33 /* NavigationScreen.swift */; };
+		E8CFD08528786AE20011AD33 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD08428786AE20011AD33 /* LoginTests.swift */; };
+		E8CFD08828786F1D0011AD33 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD08728786F1D0011AD33 /* LoginScreen.swift */; };
+		E8CFD08C287873460011AD33 /* GreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD08B287873460011AD33 /* GreenButton.swift */; };
+		E8CFD08F2878747A0011AD33 /* Colors+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD08E2878747A0011AD33 /* Colors+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,10 +51,17 @@
 		E8CFD04C287374B10011AD33 /* SampleAppForXCUITestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppForXCUITestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8CFD050287374B10011AD33 /* SampleAppForXCUITestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppForXCUITestTests.swift; sourceTree = "<group>"; };
 		E8CFD056287374B10011AD33 /* SampleAppForXCUITestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppForXCUITestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8CFD05C287374B10011AD33 /* SampleAppForXCUITestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppForXCUITestUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E8CFD06B287376F10011AD33 /* TextFieldsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldsDataModel.swift; sourceTree = "<group>"; };
+		E8CFD05C287374B10011AD33 /* BMICalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalcTests.swift; sourceTree = "<group>"; };
 		E8CFD06D287440280011AD33 /* BMICalc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalc.swift; sourceTree = "<group>"; };
-		E8CFD07128744EC90011AD33 /* ToDoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
+		E8CFD07128744EC90011AD33 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		E8CFD0782874BBC10011AD33 /* BaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
+		E8CFD07A2874BC800011AD33 /* XCUIElement+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElement+Extension.swift"; sourceTree = "<group>"; };
+		E8CFD07C2874BCB80011AD33 /* BMIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIScreen.swift; sourceTree = "<group>"; };
+		E8CFD07E2874BCC90011AD33 /* NavigationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationScreen.swift; sourceTree = "<group>"; };
+		E8CFD08428786AE20011AD33 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
+		E8CFD08728786F1D0011AD33 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		E8CFD08B287873460011AD33 /* GreenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenButton.swift; sourceTree = "<group>"; };
+		E8CFD08E2878747A0011AD33 /* Colors+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				E8CFD06A287376790011AD33 /* Views */,
-				E8CFD069287376720011AD33 /* Models */,
+				E8CFD08E2878747A0011AD33 /* Colors+Extension.swift */,
 				E8CFD03F287374AF0011AD33 /* SampleAppForXCUITestApp.swift */,
 				E8CFD041287374AF0011AD33 /* ContentView.swift */,
 				E8CFD043287374B10011AD33 /* Assets.xcassets */,
@@ -127,26 +141,89 @@
 		E8CFD059287374B10011AD33 /* SampleAppForXCUITestUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E8CFD05C287374B10011AD33 /* SampleAppForXCUITestUITestsLaunchTests.swift */,
+				E8CFD0742874BB7F0011AD33 /* Screens */,
+				E8CFD0732874BB790011AD33 /* Tests */,
+				E8CFD0762874BB8D0011AD33 /* Utils */,
+				E8CFD0752874BB850011AD33 /* Extensions */,
 			);
 			path = SampleAppForXCUITestUITests;
-			sourceTree = "<group>";
-		};
-		E8CFD069287376720011AD33 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				E8CFD06B287376F10011AD33 /* TextFieldsDataModel.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		E8CFD06A287376790011AD33 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				E8CFD06D287440280011AD33 /* BMICalc.swift */,
-				E8CFD07128744EC90011AD33 /* ToDoList.swift */,
+				E8CFD07128744EC90011AD33 /* LoginPage.swift */,
+				E8CFD08B287873460011AD33 /* GreenButton.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E8CFD0732874BB790011AD33 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E8CFD08328786AD50011AD33 /* Login */,
+				E8CFD0772874BBB30011AD33 /* BMICalc */,
+				E8CFD0782874BBC10011AD33 /* BaseTest.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		E8CFD0742874BB7F0011AD33 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E8CFD08628786F100011AD33 /* Login */,
+				E8CFD0802874BCDC0011AD33 /* BMI */,
+				E8CFD07E2874BCC90011AD33 /* NavigationScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E8CFD0752874BB850011AD33 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E8CFD07A2874BC800011AD33 /* XCUIElement+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E8CFD0762874BB8D0011AD33 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E8CFD0772874BBB30011AD33 /* BMICalc */ = {
+			isa = PBXGroup;
+			children = (
+				E8CFD05C287374B10011AD33 /* BMICalcTests.swift */,
+			);
+			path = BMICalc;
+			sourceTree = "<group>";
+		};
+		E8CFD0802874BCDC0011AD33 /* BMI */ = {
+			isa = PBXGroup;
+			children = (
+				E8CFD07C2874BCB80011AD33 /* BMIScreen.swift */,
+			);
+			path = BMI;
+			sourceTree = "<group>";
+		};
+		E8CFD08328786AD50011AD33 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E8CFD08428786AE20011AD33 /* LoginTests.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E8CFD08628786F100011AD33 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E8CFD08728786F1D0011AD33 /* LoginScreen.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,8 +358,9 @@
 			files = (
 				E8CFD042287374AF0011AD33 /* ContentView.swift in Sources */,
 				E8CFD040287374AF0011AD33 /* SampleAppForXCUITestApp.swift in Sources */,
-				E8CFD07228744EC90011AD33 /* ToDoList.swift in Sources */,
-				E8CFD06C287376F10011AD33 /* TextFieldsDataModel.swift in Sources */,
+				E8CFD08C287873460011AD33 /* GreenButton.swift in Sources */,
+				E8CFD08F2878747A0011AD33 /* Colors+Extension.swift in Sources */,
+				E8CFD07228744EC90011AD33 /* LoginPage.swift in Sources */,
 				E8CFD06E287440280011AD33 /* BMICalc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,7 +377,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8CFD05D287374B10011AD33 /* SampleAppForXCUITestUITestsLaunchTests.swift in Sources */,
+				E8CFD07B2874BC800011AD33 /* XCUIElement+Extension.swift in Sources */,
+				E8CFD0792874BBC10011AD33 /* BaseTest.swift in Sources */,
+				E8CFD07D2874BCB80011AD33 /* BMIScreen.swift in Sources */,
+				E8CFD08528786AE20011AD33 /* LoginTests.swift in Sources */,
+				E8CFD08828786F1D0011AD33 /* LoginScreen.swift in Sources */,
+				E8CFD05D287374B10011AD33 /* BMICalcTests.swift in Sources */,
+				E8CFD07F2874BCC90011AD33 /* NavigationScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
