@@ -5,8 +5,6 @@
 //  Created by Ihor Livinskyi on 05.07.2022.
 //
 
-import Foundation
-import SwiftUI
 import XCTest
 
 class BMIScreen: Screen {

@@ -143,7 +143,6 @@
 			children = (
 				E8CFD0742874BB7F0011AD33 /* Screens */,
 				E8CFD0732874BB790011AD33 /* Tests */,
-				E8CFD0762874BB8D0011AD33 /* Utils */,
 				E8CFD0752874BB850011AD33 /* Extensions */,
 			);
 			path = SampleAppForXCUITestUITests;
@@ -185,13 +184,6 @@
 				E8CFD07A2874BC800011AD33 /* XCUIElement+Extension.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		E8CFD0762874BB8D0011AD33 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		E8CFD0772874BBB30011AD33 /* BMICalc */ = {

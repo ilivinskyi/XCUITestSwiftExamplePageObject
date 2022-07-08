@@ -5,9 +5,7 @@
 //  Created by Ihor Livinskyi on 05.07.2022.
 //
 
-import Foundation
 import XCTest
-import SwiftUI
 
 protocol Screen {
     var app: XCUIApplication { get }
