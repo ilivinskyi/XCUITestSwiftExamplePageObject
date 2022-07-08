@@ -21,6 +21,7 @@ class NavigationScreen: Screen {
     enum NavigationMenu: String {
         case bmi = "BMI Calc"
         case login = "Login"
+        case loader = "Loader"
     }
     
     func switchTo(tab: NavigationMenu) {
@@ -28,6 +29,8 @@ class NavigationScreen: Screen {
         case .bmi:
             app.buttons[tab.rawValue].waitAndTap()
         case .login:
+            app.buttons[tab.rawValue].waitAndTap()
+        case .loader:
             app.buttons[tab.rawValue].waitAndTap()
         }
     }
