@@ -13,3 +13,5 @@ switch to cloned folder
 run tests
 
 	xcodebuild test -scheme SampleAppForXCUITestUITests -destination "platform=iOS Simulator,name=iPhone 12 Pro Max" -testPlan AllTests -resultBundlePath result.xcresult
+
+Also tests can be runned directly from the Xcode
