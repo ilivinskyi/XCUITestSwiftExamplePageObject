@@ -1,0 +1,27 @@
+{
+  "configurations" : [
+    {
+      "id" : "2ED6B647-B6A5-42D7-BF36-FB8612DEBDF2",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "skippedTests" : [
+        "BaseTest"
+      ],
+      "target" : {
+        "containerPath" : "container:SampleAppForXCUITest.xcodeproj",
+        "identifier" : "E8CFD055287374B10011AD33",
+        "name" : "SampleAppForXCUITestUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

@@ -70,6 +70,7 @@
 		E8CFD09A28787DB20011AD33 /* ActivityIndicatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorTests.swift; sourceTree = "<group>"; };
 		E8CFD09D28787DF10011AD33 /* LoaderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderScreen.swift; sourceTree = "<group>"; };
 		E8CFD0A02878ABAB0011AD33 /* LoginScreenTestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenTestData.swift; sourceTree = "<group>"; };
+		E8CFD0A42878B0050011AD33 /* AllTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = AllTests.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,9 +150,10 @@
 		E8CFD059287374B10011AD33 /* SampleAppForXCUITestUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E8CFD09F2878AB800011AD33 /* TestData */,
 				E8CFD0742874BB7F0011AD33 /* Screens */,
 				E8CFD0732874BB790011AD33 /* Tests */,
+				E8CFD0A22878ADE50011AD33 /* TestPlans */,
+				E8CFD09F2878AB800011AD33 /* TestData */,
 				E8CFD0752874BB850011AD33 /* Extensions */,
 			);
 			path = SampleAppForXCUITestUITests;
@@ -252,6 +254,14 @@
 				E8CFD0A02878ABAB0011AD33 /* LoginScreenTestData.swift */,
 			);
 			path = TestData;
+			sourceTree = "<group>";
+		};
+		E8CFD0A22878ADE50011AD33 /* TestPlans */ = {
+			isa = PBXGroup;
+			children = (
+				E8CFD0A42878B0050011AD33 /* AllTests.xctestplan */,
+			);
+			path = TestPlans;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
