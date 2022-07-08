@@ -9,7 +9,7 @@ import XCTest
 
 class ActivityIndicatorTests: BaseTest {
      
-    func testValidCredentials() throws {
+    func testThatIndicatorDissappeared() throws {
         NavigationScreen().switchTo(tab: .loader)
         LoaderScreen().tapLoaderButton()
             .waitForActivityIndicator()
