@@ -1,5 +1,5 @@
 # XCUITest PageObject Example 
-A simple example of XCUITest Page Object for simple SwiftUI test application
+XCUITest Page Object for simple SwiftUI test application
 
 ### Installation
 Clone or download repository 
