@@ -8,8 +8,25 @@
 import XCTest
 
 extension XCUIElement {
-    func waitForDissappear(timeout: Int) {
-        print("kek")
+    
+    /**
+     Waits for XCUIElement to dissappear
+     - Parameter timeout: waiting time
+     */
+    func waitForDissappear(timeout: Double) -> Bool {
+        if self.waitForExistence(timeout: 5) {
+            var counter = 0
+            let timeStart = Date().timeIntervalSince1970
+            while (Date().timeIntervalSince1970 <= (timeStart + timeout)) {
+                if !exists {
+                    print("Total waiting time was: \(counter)")
+                    return true
+                }
+                counter += 1
+                sleep(1)
+            }
+        }
+        return false
     }
     
     /**

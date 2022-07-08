@@ -24,6 +24,8 @@
 		E8CFD08C287873460011AD33 /* GreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD08B287873460011AD33 /* GreenButton.swift */; };
 		E8CFD08F2878747A0011AD33 /* Colors+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD08E2878747A0011AD33 /* Colors+Extension.swift */; };
 		E8CFD091287877910011AD33 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD090287877910011AD33 /* ActivityIndicator.swift */; };
+		E8CFD09B28787DB20011AD33 /* ActivityIndicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD09A28787DB20011AD33 /* ActivityIndicatorTests.swift */; };
+		E8CFD09E28787DF10011AD33 /* LoaderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD09D28787DF10011AD33 /* LoaderScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		E8CFD08B287873460011AD33 /* GreenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenButton.swift; sourceTree = "<group>"; };
 		E8CFD08E2878747A0011AD33 /* Colors+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Extension.swift"; sourceTree = "<group>"; };
 		E8CFD090287877910011AD33 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		E8CFD09A28787DB20011AD33 /* ActivityIndicatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorTests.swift; sourceTree = "<group>"; };
+		E8CFD09D28787DF10011AD33 /* LoaderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,7 @@
 		E8CFD0732874BB790011AD33 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				E8CFD09928787DA10011AD33 /* Loader */,
 				E8CFD08328786AD50011AD33 /* Login */,
 				E8CFD0772874BBB30011AD33 /* BMICalc */,
 				E8CFD0782874BBC10011AD33 /* BaseTest.swift */,
@@ -174,6 +179,7 @@
 		E8CFD0742874BB7F0011AD33 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				E8CFD09C28787DE20011AD33 /* Loader */,
 				E8CFD08628786F100011AD33 /* Login */,
 				E8CFD0802874BCDC0011AD33 /* BMI */,
 				E8CFD07E2874BCC90011AD33 /* NavigationScreen.swift */,
@@ -219,6 +225,22 @@
 				E8CFD08728786F1D0011AD33 /* LoginScreen.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		E8CFD09928787DA10011AD33 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				E8CFD09A28787DB20011AD33 /* ActivityIndicatorTests.swift */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		E8CFD09C28787DE20011AD33 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				E8CFD09D28787DF10011AD33 /* LoaderScreen.swift */,
+			);
+			path = Loader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,7 +399,9 @@
 				E8CFD0792874BBC10011AD33 /* BaseTest.swift in Sources */,
 				E8CFD07D2874BCB80011AD33 /* BMIScreen.swift in Sources */,
 				E8CFD08528786AE20011AD33 /* LoginTests.swift in Sources */,
+				E8CFD09B28787DB20011AD33 /* ActivityIndicatorTests.swift in Sources */,
 				E8CFD08828786F1D0011AD33 /* LoginScreen.swift in Sources */,
+				E8CFD09E28787DF10011AD33 /* LoaderScreen.swift in Sources */,
 				E8CFD05D287374B10011AD33 /* BMICalcTests.swift in Sources */,
 				E8CFD07F2874BCC90011AD33 /* NavigationScreen.swift in Sources */,
 			);
