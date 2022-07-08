@@ -26,6 +26,7 @@
 		E8CFD091287877910011AD33 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD090287877910011AD33 /* ActivityIndicator.swift */; };
 		E8CFD09B28787DB20011AD33 /* ActivityIndicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD09A28787DB20011AD33 /* ActivityIndicatorTests.swift */; };
 		E8CFD09E28787DF10011AD33 /* LoaderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD09D28787DF10011AD33 /* LoaderScreen.swift */; };
+		E8CFD0A12878ABAB0011AD33 /* LoginScreenTestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD0A02878ABAB0011AD33 /* LoginScreenTestData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		E8CFD090287877910011AD33 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		E8CFD09A28787DB20011AD33 /* ActivityIndicatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorTests.swift; sourceTree = "<group>"; };
 		E8CFD09D28787DF10011AD33 /* LoaderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderScreen.swift; sourceTree = "<group>"; };
+		E8CFD0A02878ABAB0011AD33 /* LoginScreenTestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenTestData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 		E8CFD059287374B10011AD33 /* SampleAppForXCUITestUITests */ = {
 			isa = PBXGroup;
 			children = (
+				E8CFD09F2878AB800011AD33 /* TestData */,
 				E8CFD0742874BB7F0011AD33 /* Screens */,
 				E8CFD0732874BB790011AD33 /* Tests */,
 				E8CFD0752874BB850011AD33 /* Extensions */,
@@ -241,6 +244,14 @@
 				E8CFD09D28787DF10011AD33 /* LoaderScreen.swift */,
 			);
 			path = Loader;
+			sourceTree = "<group>";
+		};
+		E8CFD09F2878AB800011AD33 /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				E8CFD0A02878ABAB0011AD33 /* LoginScreenTestData.swift */,
+			);
+			path = TestData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,6 +409,7 @@
 				E8CFD07B2874BC800011AD33 /* XCUIElement+Extension.swift in Sources */,
 				E8CFD0792874BBC10011AD33 /* BaseTest.swift in Sources */,
 				E8CFD07D2874BCB80011AD33 /* BMIScreen.swift in Sources */,
+				E8CFD0A12878ABAB0011AD33 /* LoginScreenTestData.swift in Sources */,
 				E8CFD08528786AE20011AD33 /* LoginTests.swift in Sources */,
 				E8CFD09B28787DB20011AD33 /* ActivityIndicatorTests.swift in Sources */,
 				E8CFD08828786F1D0011AD33 /* LoginScreen.swift in Sources */,

@@ -8,7 +8,6 @@
 import XCTest
 
 extension XCUIElement {
-    
     /**
      Waits for XCUIElement to dissappear
      - Parameter timeout: waiting time
@@ -19,7 +18,6 @@ extension XCUIElement {
             let timeStart = Date().timeIntervalSince1970
             while (Date().timeIntervalSince1970 <= (timeStart + timeout)) {
                 if !exists {
-                    print("Total waiting time was: \(counter)")
                     return true
                 }
                 counter += 1
@@ -39,11 +37,8 @@ extension XCUIElement {
             XCTFail("Tried to clear and enter text into a non string value")
             return
         }
-        
         self.tap()
-        
         let deleteString = String(repeating: XCUIKeyboardKey.delete.rawValue, count: stringValue.count)
-        
         self.typeText(deleteString)
         self.typeText(text)
     }

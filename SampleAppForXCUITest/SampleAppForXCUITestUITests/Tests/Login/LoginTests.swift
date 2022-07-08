@@ -9,41 +9,37 @@ import XCTest
 
 class LoginTests: BaseTest {
     
-    let validUsername = "admin"
-    let validPassowrd = "password"
-    let emptyCredentialsErrorMessage = "Please email and password"
-    let incorrectCredentialsErrorMessage = "Worng password or email"
-    let successMessage = "Correct!"
+    let testData = LoginScreenTestData()
     
     func testValidCredentials() throws {
         NavigationScreen().switchTo(tab: .login)
-        LoginScreen().enterUsername(username: validUsername)
-            .enterPassword(password: validPassowrd)
+        LoginScreen().enterUsername(username: testData.validUsername)
+            .enterPassword(password: testData.validPassowrd)
             .tapLoginButton()
-        XCTAssertEqual(LoginScreen().getSuccessMessage(), successMessage, "")
+        XCTAssertEqual(LoginScreen().getSuccessMessage(), testData.successMessage, "")
     }
     
     func testEmptyPassword() throws {
         NavigationScreen().switchTo(tab: .login)
-        LoginScreen().enterUsername(username: validUsername)
+        LoginScreen().enterUsername(username: testData.validUsername)
             .enterPassword(password: "")
             .tapLoginButton()
-        XCTAssertEqual(LoginScreen().getErrorMessage(), emptyCredentialsErrorMessage)
+        XCTAssertEqual(LoginScreen().getErrorMessage(), testData.emptyCredentialsErrorMessage)
     }
     
     func testEmptyUsername() throws {
         NavigationScreen().switchTo(tab: .login)
-        LoginScreen().enterUsername(username: validUsername)
+        LoginScreen().enterUsername(username: testData.validUsername)
             .enterPassword(password: "")
             .tapLoginButton()
-        XCTAssertEqual(LoginScreen().getErrorMessage(), emptyCredentialsErrorMessage)
+        XCTAssertEqual(LoginScreen().getErrorMessage(), testData.emptyCredentialsErrorMessage)
     }
     
     func testInvalidCredentials() throws {
         NavigationScreen().switchTo(tab: .login)
-        LoginScreen().enterUsername(username: validUsername)
+        LoginScreen().enterUsername(username: testData.validUsername)
             .enterPassword(password: "123")
             .tapLoginButton()
-        XCTAssertEqual(LoginScreen().getErrorMessage(), incorrectCredentialsErrorMessage)
+        XCTAssertEqual(LoginScreen().getErrorMessage(), testData.incorrectCredentialsErrorMessage)
     }
 }
