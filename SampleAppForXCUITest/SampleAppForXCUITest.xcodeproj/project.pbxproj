@@ -23,6 +23,7 @@
 		E8CFD08828786F1D0011AD33 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD08728786F1D0011AD33 /* LoginScreen.swift */; };
 		E8CFD08C287873460011AD33 /* GreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD08B287873460011AD33 /* GreenButton.swift */; };
 		E8CFD08F2878747A0011AD33 /* Colors+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD08E2878747A0011AD33 /* Colors+Extension.swift */; };
+		E8CFD091287877910011AD33 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD090287877910011AD33 /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		E8CFD08728786F1D0011AD33 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		E8CFD08B287873460011AD33 /* GreenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenButton.swift; sourceTree = "<group>"; };
 		E8CFD08E2878747A0011AD33 /* Colors+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Extension.swift"; sourceTree = "<group>"; };
+		E8CFD090287877910011AD33 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				E8CFD06D287440280011AD33 /* BMICalc.swift */,
 				E8CFD07128744EC90011AD33 /* LoginPage.swift */,
 				E8CFD08B287873460011AD33 /* GreenButton.swift */,
+				E8CFD090287877910011AD33 /* ActivityIndicator.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				E8CFD040287374AF0011AD33 /* SampleAppForXCUITestApp.swift in Sources */,
 				E8CFD08C287873460011AD33 /* GreenButton.swift in Sources */,
 				E8CFD08F2878747A0011AD33 /* Colors+Extension.swift in Sources */,
+				E8CFD091287877910011AD33 /* ActivityIndicator.swift in Sources */,
 				E8CFD07228744EC90011AD33 /* LoginPage.swift in Sources */,
 				E8CFD06E287440280011AD33 /* BMICalc.swift in Sources */,
 			);

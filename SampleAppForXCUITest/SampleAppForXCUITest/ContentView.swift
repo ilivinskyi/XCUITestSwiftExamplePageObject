@@ -19,6 +19,10 @@ struct ContentView: View {
                 .tabItem {
                     Label("Login", systemImage: "person.fill")
                 }
+            ActivityIndicator()
+                .tabItem {
+                    Label("Loader", systemImage: "star.leadinghalf.filled")
+                }
         }
     }
     
