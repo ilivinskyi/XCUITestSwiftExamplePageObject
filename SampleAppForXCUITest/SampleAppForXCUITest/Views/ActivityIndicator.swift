@@ -10,6 +10,7 @@ import SwiftUI
 struct ActivityIndicator: View {
     
     @State var loaderActive: Bool = false
+    @State var showText: Bool = false
     
     var body: some View {
         VStack {
@@ -19,12 +20,19 @@ struct ActivityIndicator: View {
                     .progressViewStyle(CircularProgressViewStyle())
                     .accessibilityIdentifier("activityIndicator")
             }
+            if showText {
+                Text("Correct!")
+                    .font(.title2)
+                    .foregroundColor(.green)
+                    .accessibilityIdentifier("greenText")
+            }
             Spacer()
             Button(action: {
                 startAtivityIndicator()
             }) {
                 GreenButton(buttonText: "Press to start loading")
             }
+            .accessibilityIdentifier("loaderButton")
             Spacer()
         }
     }
@@ -33,8 +41,8 @@ struct ActivityIndicator: View {
         loaderActive.toggle()
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(Int.random(in: 1 ... 15)), execute: {
             loaderActive.toggle()
+            showText.toggle()
         })
-        
     }
 }
 
