@@ -13,7 +13,3 @@ switch to cloned folder
 run tests
 
 	xcodebuild test -scheme SampleAppForXCUITestUITests -destination "platform=iOS Simulator,name=iPhone 12 Pro Max" -testPlan AllTests -resultBundlePath result.xcresult
-  
-Tests can also be executed in several stream to speed things up
-
-  ```xcodebuild test -scheme SampleAppForXCUITestUITests -destination "platform=iOS Simulator,name=iPhone 12 Pro Max" -testPlan AllTests -disable-concurrent-destination-testing -parallel-testing-enabled YES -parallel-testing-worker-count 2 -resultBundlePath /Users/ihorl/Desktop/result.xcresult```
