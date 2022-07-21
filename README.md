@@ -1,6 +1,8 @@
 # XCUITest PageObject Example 
 XCUITest PageObject for simple SwiftUI test application
 
+![alt text](https://github.com/ilivinskyi/snippets-and-media/blob/main/run.gif)
+
 ### Installation
 Clone or download repository 
 
