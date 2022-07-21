@@ -7,7 +7,7 @@
 
 import XCTest
 
-class BMIScreen: BaseScreen {    
+class BMIScreen: BaseScreen, TabBarProtocol {    
     private lazy var heightTextField = app.textFields["heightTextField"]
     private lazy var weightTextField = app.textFields["weightTextField"]
     private lazy var calculateButton = app.buttons["calculateButton"]

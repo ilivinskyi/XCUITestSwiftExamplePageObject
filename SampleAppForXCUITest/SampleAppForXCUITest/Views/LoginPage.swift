@@ -39,23 +39,18 @@ struct LoginPage: View {
             }
             .accessibilityIdentifier("loginButton")
             if incorrectCredentials {
-                Text("Worng password or email")
-                    .foregroundColor(.red)
-                    .accessibilityIdentifier("errorText")
+                ErrorText(message: "Worng password or email")
             }
             
             if emptyCredentials {
-                Text("Please email and password")
-                    .foregroundColor(.red)
-                    .accessibilityIdentifier("errorText")
-                
+                ErrorText(message: "Please email and password")
             }
             
             if correctCredentials {
                 Text("Correct!")
                     .font(.title2)
                     .foregroundColor(.green)
-                    .accessibilityIdentifier("successText")
+                    .accessibilityIdentifier("messageText")
             }
         }
         .padding()
@@ -77,12 +72,23 @@ struct LoginPage: View {
 }
 
 
+
+
 struct WelcomeText : View {
     var body: some View {
         return Text("Welcome!")
             .font(.largeTitle)
             .fontWeight(.semibold)
             .padding(.bottom, 20)
+    }
+}
+
+struct ErrorText : View {
+    var message: String
+    var body: some View {
+        return Text(message)
+            .foregroundColor(.red)
+            .accessibilityIdentifier("messageText")
     }
 }
 

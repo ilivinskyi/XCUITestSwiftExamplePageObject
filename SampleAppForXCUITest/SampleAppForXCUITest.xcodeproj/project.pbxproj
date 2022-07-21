@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E83507692889DC4900B1AB9D /* TabBarProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83507682889DC4900B1AB9D /* TabBarProtocol.swift */; };
 		E8CFD040287374AF0011AD33 /* SampleAppForXCUITestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD03F287374AF0011AD33 /* SampleAppForXCUITestApp.swift */; };
 		E8CFD042287374AF0011AD33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD041287374AF0011AD33 /* ContentView.swift */; };
 		E8CFD044287374B10011AD33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8CFD043287374B10011AD33 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E83507682889DC4900B1AB9D /* TabBarProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarProtocol.swift; sourceTree = "<group>"; };
 		E8CFD03C287374AF0011AD33 /* SampleAppForXCUITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleAppForXCUITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8CFD03F287374AF0011AD33 /* SampleAppForXCUITestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppForXCUITestApp.swift; sourceTree = "<group>"; };
 		E8CFD041287374AF0011AD33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E83507672889DC3D00B1AB9D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E83507682889DC4900B1AB9D /* TabBarProtocol.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		E8CFD033287374AF0011AD33 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +166,7 @@
 		E8CFD059287374B10011AD33 /* SampleAppForXCUITestUITests */ = {
 			isa = PBXGroup;
 			children = (
+				E83507672889DC3D00B1AB9D /* Utils */,
 				E8CFD0742874BB7F0011AD33 /* Screens */,
 				E8CFD0732874BB790011AD33 /* Tests */,
 				E8CFD0A22878ADE50011AD33 /* TestPlans */,
@@ -444,6 +455,7 @@
 				E8CFD08828786F1D0011AD33 /* LoginScreen.swift in Sources */,
 				E8DDE9202889A191002B495F /* XCTest+Extension.swift in Sources */,
 				E8CFD09E28787DF10011AD33 /* LoaderScreen.swift in Sources */,
+				E83507692889DC4900B1AB9D /* TabBarProtocol.swift in Sources */,
 				E8CFD05D287374B10011AD33 /* BMICalcTests.swift in Sources */,
 				E8CFD07F2874BCC90011AD33 /* NavigationScreen.swift in Sources */,
 			);
