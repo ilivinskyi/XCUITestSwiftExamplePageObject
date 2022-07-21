@@ -12,11 +12,10 @@ extension XCUIElement {
      Waits for XCUIElement to dissappear
      - Parameter timeout: waiting time
      */
-    func waitForDissappear(timeout: Double) -> Bool {
+    func waitForDissappear(timeout: Int) -> Bool {
         if self.waitForExistence(timeout: 5) {
             var counter = 0
-            let timeStart = Date().timeIntervalSince1970
-            while (Date().timeIntervalSince1970 <= (timeStart + timeout)) {
+            for _ in 1...timeout {
                 if !exists {
                     return true
                 }

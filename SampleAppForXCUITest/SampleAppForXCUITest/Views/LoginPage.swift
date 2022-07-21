@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct LoginPage: View {
-    let secretUser = "admin"
-    let secretPassword = "password"
+    private let secretUser = "admin"
+    private let secretPassword = "password"
     
     @State var username: String = ""
     @State var password: String = ""
@@ -61,7 +61,7 @@ struct LoginPage: View {
         .padding()
     }
     
-    func checkCredentials() {
+    private func checkCredentials() {
         correctCredentials = false
         incorrectCredentials = false
         emptyCredentials = false
