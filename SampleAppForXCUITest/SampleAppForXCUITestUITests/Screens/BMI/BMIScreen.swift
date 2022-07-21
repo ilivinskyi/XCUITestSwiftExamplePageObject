@@ -7,18 +7,16 @@
 
 import XCTest
 
-class BMIScreen: Screen {
+class BMIScreen: BaseScreen {    
+    private lazy var heightTextField = app.textFields["heightTextField"]
+    private lazy var weightTextField = app.textFields["weightTextField"]
+    private lazy var calculateButton = app.buttons["calculateButton"]
+    private lazy var bmiResult = app.staticTexts["usersBMI"]
     
-    var app: XCUIApplication
-    
-    init() {
-        app = XCUIApplication()
+    override init() {
+        super.init()
+        visible()
     }
-    
-    lazy var heightTextField = app.textFields["heightTextField"]
-    lazy var weightTextField = app.textFields["weightTextField"]
-    lazy var calculateButton = app.buttons["calculateButton"]
-    lazy var bmiResult = app.staticTexts["usersBMI"]
     
     @discardableResult func clickCalculateButton() -> Self {
         calculateButton.waitAndTap()
@@ -43,6 +41,13 @@ class BMIScreen: Screen {
             return ""
         }
     }
-    
-    
+}
+
+extension BMIScreen {
+    func visible() {
+        guard calculateButton.waitForExistence(timeout: 5) else {
+            XCTFail("Loader Screen was not opened")
+            return
+        }
+    }
 }
