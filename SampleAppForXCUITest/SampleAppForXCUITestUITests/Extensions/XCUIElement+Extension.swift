@@ -44,11 +44,11 @@ extension XCUIElement {
      Waits 5 seconds for element to appear and then taps it
      */
     func waitAndTap() {
-        if self.waitForExistence(timeout: 5) {
-            self.tap()
-        } else {
-            XCTFail("Element not exist")
+        guard self.waitForExistence(timeout: 5) else {
+            XCTFail("\(self.description) is not visible or can't be tapped")
+            return
         }
+        self.tap()
     }
     
     /**

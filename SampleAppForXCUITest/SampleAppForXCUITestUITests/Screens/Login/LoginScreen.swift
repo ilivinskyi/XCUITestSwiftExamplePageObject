@@ -7,12 +7,11 @@
 
 import XCTest
 
-class LoginScreen: BaseScreen {    
+class LoginScreen: BaseScreen, TabBarProtocol {    
     lazy private var usernameField = app.textFields["usernameField"]
     lazy private var passwordField = app.secureTextFields["passwordField"]
     lazy private var loginButton = app.buttons["loginButton"]
-    lazy private var errorText = app.staticTexts["errorText"]
-    lazy private var successText = app.staticTexts["successText"]
+    lazy private var messageText = app.staticTexts["messageText"]
     
     override init() {
         super.init()
@@ -38,26 +37,14 @@ class LoginScreen: BaseScreen {
         return self
     }
     
-    private func errorMessageExists() -> Bool {
-        errorText.waitForExistence(timeout: 10)
+    private func messageExists() -> Bool {
+        messageText.waitForExistence(timeout: 10)
     }
     
-    private func successMessageExists() -> Bool {
-        successText.waitForExistence(timeout: 10)
-    }
-    
-    func getErrorMessage() -> String {
+    func getMessage() -> String {
         var message = ""
-        if errorMessageExists() {
-            message = errorText.label
-        }
-        return message
-    }
-    
-    func getSuccessMessage() -> String {
-        var message = ""
-        if successMessageExists() {
-            message = successText.label
+        if messageExists() {
+            message = messageText.label
         }
         return message
     }

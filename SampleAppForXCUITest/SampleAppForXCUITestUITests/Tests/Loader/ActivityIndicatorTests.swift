@@ -11,7 +11,7 @@ class ActivityIndicatorTests: BaseTest {
     
     func testThatIndicatorDissappeared() throws {
         activity("Check that green text is visible after the activity indicator disappears") {
-            NavigationScreen().switchTo(tab: .loader)
+            NavigationScreen().tapLoader()
             LoaderScreen()
                 .tapLoaderButton()
                 .waitForActivityIndicator()

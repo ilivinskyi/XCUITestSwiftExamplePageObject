@@ -7,7 +7,7 @@
 
 import XCTest
 
-class LoaderScreen: BaseScreen {    
+class LoaderScreen: BaseScreen, TabBarProtocol {    
     private lazy var loaderButton = app.buttons["loaderButton"]
     private lazy var activityIndicator = app.otherElements["activityIndicator"]
     private lazy var greenText = app.staticTexts["greenText"]
