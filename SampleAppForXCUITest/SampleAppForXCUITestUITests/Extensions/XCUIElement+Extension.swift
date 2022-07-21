@@ -53,4 +53,23 @@ extension XCUIElement {
             XCTFail("Element not exist")
         }
     }
+    
+    /**
+     Checks if the element exists and can be tapped
+     */
+    func existsAndHitable() -> Bool {
+        return self.waitForExistence(timeout: 10) && self.isHittable
+    }
+    
+    /**
+     Make force tap of the element
+     */
+    func forceTapElement() {
+        if self.isHittable {
+            self.tap()
+        } else {
+            let coordinate: XCUICoordinate = self.coordinate(withNormalizedOffset: CGVector(dx: 0.0, dy: 0.0))
+            coordinate.tap()
+        }
+    }
 }

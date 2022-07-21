@@ -8,11 +8,14 @@
 import XCTest
 
 class ActivityIndicatorTests: BaseTest {
-     
+    
     func testThatIndicatorDissappeared() throws {
-        NavigationScreen().switchTo(tab: .loader)
-        LoaderScreen().tapLoaderButton()
-            .waitForActivityIndicator()
-        XCTAssertTrue(LoaderScreen().greenTextExists())
+        activity("Check that green text is visible after the activity indicator disappears") {
+            NavigationScreen().switchTo(tab: .loader)
+            LoaderScreen()
+                .tapLoaderButton()
+                .waitForActivityIndicator()
+            XCTAssertTrue(LoaderScreen().greenTextExists())
+        }
     }
 }

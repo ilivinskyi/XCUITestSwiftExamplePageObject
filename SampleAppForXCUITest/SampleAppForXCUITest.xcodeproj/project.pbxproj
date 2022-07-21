@@ -27,6 +27,9 @@
 		E8CFD09B28787DB20011AD33 /* ActivityIndicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD09A28787DB20011AD33 /* ActivityIndicatorTests.swift */; };
 		E8CFD09E28787DF10011AD33 /* LoaderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD09D28787DF10011AD33 /* LoaderScreen.swift */; };
 		E8CFD0A12878ABAB0011AD33 /* LoginScreenTestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD0A02878ABAB0011AD33 /* LoginScreenTestData.swift */; };
+		E8DDE91E28899E46002B495F /* BaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DDE91D28899E46002B495F /* BaseScreen.swift */; };
+		E8DDE9202889A191002B495F /* XCTest+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DDE91F2889A191002B495F /* XCTest+Extension.swift */; };
+		E8DDE9222889A36D002B495F /* BMIScreenTestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DDE9212889A36D002B495F /* BMIScreenTestData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,9 @@
 		E8CFD09D28787DF10011AD33 /* LoaderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderScreen.swift; sourceTree = "<group>"; };
 		E8CFD0A02878ABAB0011AD33 /* LoginScreenTestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenTestData.swift; sourceTree = "<group>"; };
 		E8CFD0A42878B0050011AD33 /* AllTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = AllTests.xctestplan; sourceTree = "<group>"; };
+		E8DDE91D28899E46002B495F /* BaseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreen.swift; sourceTree = "<group>"; };
+		E8DDE91F2889A191002B495F /* XCTest+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTest+Extension.swift"; sourceTree = "<group>"; };
+		E8DDE9212889A36D002B495F /* BMIScreenTestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIScreenTestData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,10 +190,11 @@
 		E8CFD0742874BB7F0011AD33 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				E8DDE91C28899E37002B495F /* Navigation */,
 				E8CFD09C28787DE20011AD33 /* Loader */,
 				E8CFD08628786F100011AD33 /* Login */,
 				E8CFD0802874BCDC0011AD33 /* BMI */,
-				E8CFD07E2874BCC90011AD33 /* NavigationScreen.swift */,
+				E8DDE91D28899E46002B495F /* BaseScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -196,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				E8CFD07A2874BC800011AD33 /* XCUIElement+Extension.swift */,
+				E8DDE91F2889A191002B495F /* XCTest+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -252,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				E8CFD0A02878ABAB0011AD33 /* LoginScreenTestData.swift */,
+				E8DDE9212889A36D002B495F /* BMIScreenTestData.swift */,
 			);
 			path = TestData;
 			sourceTree = "<group>";
@@ -262,6 +271,14 @@
 				E8CFD0A42878B0050011AD33 /* AllTests.xctestplan */,
 			);
 			path = TestPlans;
+			sourceTree = "<group>";
+		};
+		E8DDE91C28899E37002B495F /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				E8CFD07E2874BCC90011AD33 /* NavigationScreen.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,13 +433,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8DDE9222889A36D002B495F /* BMIScreenTestData.swift in Sources */,
 				E8CFD07B2874BC800011AD33 /* XCUIElement+Extension.swift in Sources */,
+				E8DDE91E28899E46002B495F /* BaseScreen.swift in Sources */,
 				E8CFD0792874BBC10011AD33 /* BaseTest.swift in Sources */,
 				E8CFD07D2874BCB80011AD33 /* BMIScreen.swift in Sources */,
 				E8CFD0A12878ABAB0011AD33 /* LoginScreenTestData.swift in Sources */,
 				E8CFD08528786AE20011AD33 /* LoginTests.swift in Sources */,
 				E8CFD09B28787DB20011AD33 /* ActivityIndicatorTests.swift in Sources */,
 				E8CFD08828786F1D0011AD33 /* LoginScreen.swift in Sources */,
+				E8DDE9202889A191002B495F /* XCTest+Extension.swift in Sources */,
 				E8CFD09E28787DF10011AD33 /* LoaderScreen.swift in Sources */,
 				E8CFD05D287374B10011AD33 /* BMICalcTests.swift in Sources */,
 				E8CFD07F2874BCC90011AD33 /* NavigationScreen.swift in Sources */,

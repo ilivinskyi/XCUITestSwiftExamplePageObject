@@ -12,34 +12,42 @@ class LoginTests: BaseTest {
     let testData = LoginScreenTestData()
     
     func testValidCredentials() throws {
-        NavigationScreen().switchTo(tab: .login)
-        LoginScreen().enterUsername(username: testData.validUsername)
-            .enterPassword(password: testData.validPassowrd)
-            .tapLoginButton()
-        XCTAssertEqual(LoginScreen().getSuccessMessage(), testData.successMessage, "")
+        activity("Test that the user can log in with valid credentials") {
+            NavigationScreen().switchTo(tab: .login)
+            LoginScreen().enterUsername(username: testData.validUsername)
+                .enterPassword(password: testData.validPassowrd)
+                .tapLoginButton()
+            XCTAssertEqual(LoginScreen().getSuccessMessage(), testData.successMessage, "")
+        }
     }
     
     func testEmptyPassword() throws {
-        NavigationScreen().switchTo(tab: .login)
-        LoginScreen().enterUsername(username: testData.validUsername)
-            .enterPassword(password: "")
-            .tapLoginButton()
-        XCTAssertEqual(LoginScreen().getErrorMessage(), testData.emptyCredentialsErrorMessage)
+        activity("Test that an error message is shown if the user forgot to type the password") {
+            NavigationScreen().switchTo(tab: .login)
+            LoginScreen().enterUsername(username: testData.validUsername)
+                .enterPassword(password: "")
+                .tapLoginButton()
+            XCTAssertEqual(LoginScreen().getErrorMessage(), testData.emptyCredentialsErrorMessage)
+        }
     }
     
     func testEmptyUsername() throws {
-        NavigationScreen().switchTo(tab: .login)
-        LoginScreen().enterUsername(username: testData.validUsername)
-            .enterPassword(password: "")
-            .tapLoginButton()
-        XCTAssertEqual(LoginScreen().getErrorMessage(), testData.emptyCredentialsErrorMessage)
+        activity("Test that an error message is shown if the user didn't input the username") {
+            NavigationScreen().switchTo(tab: .login)
+            LoginScreen().enterUsername(username: testData.validUsername)
+                .enterPassword(password: "")
+                .tapLoginButton()
+            XCTAssertEqual(LoginScreen().getErrorMessage(), testData.emptyCredentialsErrorMessage)
+        }
     }
     
     func testInvalidCredentials() throws {
-        NavigationScreen().switchTo(tab: .login)
-        LoginScreen().enterUsername(username: testData.validUsername)
-            .enterPassword(password: "123")
-            .tapLoginButton()
-        XCTAssertEqual(LoginScreen().getErrorMessage(), testData.incorrectCredentialsErrorMessage)
+        activity("Test that error is shown if the user tries to use invalid credentials") {
+            NavigationScreen().switchTo(tab: .login)
+            LoginScreen().enterUsername(username: testData.validUsername)
+                .enterPassword(password: "123")
+                .tapLoginButton()
+            XCTAssertEqual(LoginScreen().getErrorMessage(), testData.incorrectCredentialsErrorMessage)
+        }
     }
 }
