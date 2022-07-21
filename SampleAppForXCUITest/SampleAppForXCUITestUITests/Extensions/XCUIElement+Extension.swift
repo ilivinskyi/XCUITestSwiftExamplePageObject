@@ -14,12 +14,10 @@ extension XCUIElement {
      */
     func waitForDissappear(timeout: Int) -> Bool {
         if self.waitForExistence(timeout: 5) {
-            var counter = 0
             for _ in 1...timeout {
                 if !exists {
                     return true
                 }
-                counter += 1
                 sleep(1)
             }
         }
