@@ -46,7 +46,7 @@ class BMIScreen: BaseScreen {
 extension BMIScreen {
     func visible() {
         guard calculateButton.waitForExistence(timeout: 5) else {
-            XCTFail("Loader Screen was not opened")
+            XCTFail("BMI Calc Screen was not opened")
             return
         }
     }

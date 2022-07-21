@@ -32,7 +32,7 @@ class NavigationScreen: BaseScreen {
 extension NavigationScreen {
     func visible() {
         guard calculateButton.waitForExistence(timeout: 5) else {
-            XCTFail("Loader Screen was not opened")
+            XCTFail("Navigation Screen was not opened")
             return
         }
     }

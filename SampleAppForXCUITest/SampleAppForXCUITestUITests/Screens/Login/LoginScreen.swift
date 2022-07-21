@@ -66,7 +66,7 @@ class LoginScreen: BaseScreen {
 extension LoginScreen {
     func visible() {
         guard loginButton.waitForExistence(timeout: 5) else {
-            XCTFail("Loader Screen was not opened")
+            XCTFail("Login Screen was not opened")
             return
         }
     }
