@@ -11,11 +11,11 @@ class ActivityIndicatorTests: BaseTest {
     
     func testThatIndicatorDissappeared() throws {
         activity("Check that green text is visible after the activity indicator disappears") {
-            NavigationScreen().tapLoader()
-            LoaderScreen()
+            let loaderScreen = NavigationScreen()
+                .tapLoader()
                 .tapLoaderButton()
                 .waitForActivityIndicator()
-            XCTAssertTrue(LoaderScreen().greenTextExists())
+            XCTAssertTrue(loaderScreen.greenTextExists())
         }
     }
 }

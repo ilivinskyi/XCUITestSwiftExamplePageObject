@@ -18,19 +18,22 @@ class LoginScreen: BaseScreen, TabBarProtocol {
         visible()
     }
     
-    @discardableResult func tapLoginButton() -> Self {
+    @discardableResult
+    func tapLoginButton() -> Self {
         loginButton.waitAndTap()
         return self
     }
     
-    @discardableResult func enterUsername(username: String) -> Self {
+    @discardableResult
+    func enterUsername(username: String) -> Self {
         if usernameField.waitForExistence(timeout: 5) {
             usernameField.clearAndEnterText(text: username)
         }
         return self
     }
     
-    @discardableResult func enterPassword(password: String) -> Self {
+    @discardableResult
+    func enterPassword(password: String) -> Self {
         if passwordField.waitForExistence(timeout: 5) {
             passwordField.clearAndEnterText(text: password)
         }
