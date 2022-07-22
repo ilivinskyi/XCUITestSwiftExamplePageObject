@@ -39,7 +39,7 @@ struct ActivityIndicator: View {
     
     func startAtivityIndicator() {
         loaderActive.toggle()
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(Int.random(in: 1 ... 15)), execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(Int.random(in: 1...15)), execute: {
             loaderActive.toggle()
             showText.toggle()
         })

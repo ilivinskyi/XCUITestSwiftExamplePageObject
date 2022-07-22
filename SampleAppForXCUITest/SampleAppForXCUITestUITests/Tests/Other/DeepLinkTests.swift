@@ -18,6 +18,7 @@ class DeepLinkTests: BaseTest {
                 .open()
                 .goToURL(url)
                 .openDeepLink()
+            XCTAssertTrue(secretScreen.appInForeground())
             XCTAssertTrue(secretScreen.successMessageExists())
             XCTAssertTrue(secretScreen.getDeepLinkValue().contains(self.testValue))
         }
@@ -31,6 +32,7 @@ class DeepLinkTests: BaseTest {
                 .open()
                 .goToURL(url)
                 .openDeepLink()
+            XCTAssertTrue(secretScreen.appInForeground())
             XCTAssertFalse(secretScreen.successMessageExists())
         }
     }
