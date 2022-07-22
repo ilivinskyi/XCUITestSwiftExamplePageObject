@@ -17,12 +17,14 @@ class LoaderScreen: BaseScreen, TabBarProtocol {
         visible()
     }
     
-    @discardableResult func waitForActivityIndicator() -> Self {
+    @discardableResult
+    func waitForActivityIndicator() -> Self {
         _ = activityIndicator.waitForDissappear(timeout: 30)
         return self
     }
     
-    @discardableResult func tapLoaderButton() -> Self {
+    @discardableResult
+    func tapLoaderButton() -> Self {
         loaderButton.waitAndTap()
         return self
     }

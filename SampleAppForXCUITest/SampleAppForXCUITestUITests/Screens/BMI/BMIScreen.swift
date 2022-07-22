@@ -18,17 +18,20 @@ class BMIScreen: BaseScreen, TabBarProtocol {
         visible()
     }
     
-    @discardableResult func clickCalculateButton() -> Self {
+    @discardableResult
+    func clickCalculateButton() -> Self {
         calculateButton.waitAndTap()
         return self
     }
     
-    @discardableResult func enterHeight(value: Int) -> Self {
+    @discardableResult
+    func enterHeight(value: Int) -> Self {
         heightTextField.clearAndEnterText(text: String(value))
         return self
     }
     
-    @discardableResult func enterWeight(value: Int) -> Self {
+    @discardableResult
+    func enterWeight(value: Int) -> Self {
         weightTextField.clearAndEnterText(text: String(value))
         return self
     }
