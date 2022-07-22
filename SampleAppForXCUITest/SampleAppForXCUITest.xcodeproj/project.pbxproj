@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E83507692889DC4900B1AB9D /* TabBarProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83507682889DC4900B1AB9D /* TabBarProtocol.swift */; };
+		E8364054288B29490066F501 /* DeeplinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8364053288B29490066F501 /* DeeplinkManager.swift */; };
+		E8364056288B2A650066F501 /* SecretView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8364055288B2A650066F501 /* SecretView.swift */; };
 		E8CFD040287374AF0011AD33 /* SampleAppForXCUITestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD03F287374AF0011AD33 /* SampleAppForXCUITestApp.swift */; };
 		E8CFD042287374AF0011AD33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD041287374AF0011AD33 /* ContentView.swift */; };
 		E8CFD044287374B10011AD33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8CFD043287374B10011AD33 /* Assets.xcassets */; };
@@ -52,6 +54,9 @@
 
 /* Begin PBXFileReference section */
 		E83507682889DC4900B1AB9D /* TabBarProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarProtocol.swift; sourceTree = "<group>"; };
+		E8364051288B28DA0066F501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E8364053288B29490066F501 /* DeeplinkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkManager.swift; sourceTree = "<group>"; };
+		E8364055288B2A650066F501 /* SecretView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretView.swift; sourceTree = "<group>"; };
 		E8CFD03C287374AF0011AD33 /* SampleAppForXCUITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleAppForXCUITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8CFD03F287374AF0011AD33 /* SampleAppForXCUITestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppForXCUITestApp.swift; sourceTree = "<group>"; };
 		E8CFD041287374AF0011AD33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +119,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		E8364052288B29380066F501 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E8364053288B29490066F501 /* DeeplinkManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		E8CFD033287374AF0011AD33 = {
 			isa = PBXGroup;
 			children = (
@@ -137,11 +150,13 @@
 		E8CFD03E287374AF0011AD33 /* SampleAppForXCUITest */ = {
 			isa = PBXGroup;
 			children = (
+				E8364052288B29380066F501 /* Utils */,
 				E8CFD06A287376790011AD33 /* Views */,
 				E8CFD08E2878747A0011AD33 /* Colors+Extension.swift */,
 				E8CFD03F287374AF0011AD33 /* SampleAppForXCUITestApp.swift */,
 				E8CFD041287374AF0011AD33 /* ContentView.swift */,
 				E8CFD043287374B10011AD33 /* Assets.xcassets */,
+				E8364051288B28DA0066F501 /* Info.plist */,
 				E8CFD045287374B10011AD33 /* Preview Content */,
 			);
 			path = SampleAppForXCUITest;
@@ -183,6 +198,7 @@
 				E8CFD07128744EC90011AD33 /* LoginPage.swift */,
 				E8CFD08B287873460011AD33 /* GreenButton.swift */,
 				E8CFD090287877910011AD33 /* ActivityIndicator.swift */,
+				E8364055288B2A650066F501 /* SecretView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -422,6 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8364056288B2A650066F501 /* SecretView.swift in Sources */,
 				E8CFD042287374AF0011AD33 /* ContentView.swift in Sources */,
 				E8CFD040287374AF0011AD33 /* SampleAppForXCUITestApp.swift in Sources */,
 				E8CFD08C287873460011AD33 /* GreenButton.swift in Sources */,
@@ -429,6 +446,7 @@
 				E8CFD091287877910011AD33 /* ActivityIndicator.swift in Sources */,
 				E8CFD07228744EC90011AD33 /* LoginPage.swift in Sources */,
 				E8CFD06E287440280011AD33 /* BMICalc.swift in Sources */,
+				E8364054288B29490066F501 /* DeeplinkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +619,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SampleAppForXCUITest/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SampleAppForXCUITest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -629,6 +648,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SampleAppForXCUITest/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SampleAppForXCUITest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
