@@ -34,6 +34,11 @@
 		E8CFD09B28787DB20011AD33 /* ActivityIndicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD09A28787DB20011AD33 /* ActivityIndicatorTests.swift */; };
 		E8CFD09E28787DF10011AD33 /* LoaderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD09D28787DF10011AD33 /* LoaderScreen.swift */; };
 		E8CFD0A12878ABAB0011AD33 /* LoginScreenTestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD0A02878ABAB0011AD33 /* LoginScreenTestData.swift */; };
+		E8DC2403288C348B0053CB88 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DC2402288C348B0053CB88 /* DatePickerView.swift */; };
+		E8DC2406288C37820053CB88 /* DatePickerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DC2405288C37820053CB88 /* DatePickerScreen.swift */; };
+		E8DC2409288C3A410053CB88 /* DatePickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DC2408288C3A410053CB88 /* DatePickerTests.swift */; };
+		E8DC240B288C3B320053CB88 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DC240A288C3B320053CB88 /* Date+Extension.swift */; };
+		E8DC240D288C3ECD0053CB88 /* DatePickerScreenTestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DC240C288C3ECD0053CB88 /* DatePickerScreenTestData.swift */; };
 		E8DDE91E28899E46002B495F /* BaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DDE91D28899E46002B495F /* BaseScreen.swift */; };
 		E8DDE9202889A191002B495F /* XCTest+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DDE91F2889A191002B495F /* XCTest+Extension.swift */; };
 		E8DDE9222889A36D002B495F /* BMIScreenTestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DDE9212889A36D002B495F /* BMIScreenTestData.swift */; };
@@ -89,6 +94,11 @@
 		E8CFD09D28787DF10011AD33 /* LoaderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderScreen.swift; sourceTree = "<group>"; };
 		E8CFD0A02878ABAB0011AD33 /* LoginScreenTestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenTestData.swift; sourceTree = "<group>"; };
 		E8CFD0A42878B0050011AD33 /* AllTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = AllTests.xctestplan; sourceTree = "<group>"; };
+		E8DC2402288C348B0053CB88 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		E8DC2405288C37820053CB88 /* DatePickerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerScreen.swift; sourceTree = "<group>"; };
+		E8DC2408288C3A410053CB88 /* DatePickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerTests.swift; sourceTree = "<group>"; };
+		E8DC240A288C3B320053CB88 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		E8DC240C288C3ECD0053CB88 /* DatePickerScreenTestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerScreenTestData.swift; sourceTree = "<group>"; };
 		E8DDE91D28899E46002B495F /* BaseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreen.swift; sourceTree = "<group>"; };
 		E8DDE91F2889A191002B495F /* XCTest+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTest+Extension.swift"; sourceTree = "<group>"; };
 		E8DDE9212889A36D002B495F /* BMIScreenTestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIScreenTestData.swift; sourceTree = "<group>"; };
@@ -119,14 +129,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E83507672889DC3D00B1AB9D /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				E83507682889DC4900B1AB9D /* TabBarProtocol.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		E8364052288B29380066F501 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,12 +208,11 @@
 		E8CFD059287374B10011AD33 /* SampleAppForXCUITestUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E83507672889DC3D00B1AB9D /* Utils */,
 				E8CFD0742874BB7F0011AD33 /* Screens */,
 				E8CFD0732874BB790011AD33 /* Tests */,
 				E8CFD0A22878ADE50011AD33 /* TestPlans */,
 				E8CFD09F2878AB800011AD33 /* TestData */,
-				E8CFD0752874BB850011AD33 /* Extensions */,
+				E8CFD0752874BB850011AD33 /* Utils */,
 			);
 			path = SampleAppForXCUITestUITests;
 			sourceTree = "<group>";
@@ -224,6 +225,7 @@
 				E8CFD08B287873460011AD33 /* GreenButton.swift */,
 				E8CFD090287877910011AD33 /* ActivityIndicator.swift */,
 				E8364055288B2A650066F501 /* SecretView.swift */,
+				E8DC2402288C348B0053CB88 /* DatePickerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -231,6 +233,7 @@
 		E8CFD0732874BB790011AD33 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				E8DC2407288C3A340053CB88 /* DatePicker */,
 				E836405A288B2F680066F501 /* Other */,
 				E8CFD09928787DA10011AD33 /* Loader */,
 				E8CFD08328786AD50011AD33 /* Login */,
@@ -244,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				E8364057288B2DA50066F501 /* Other */,
+				E8DC2404288C376D0053CB88 /* DatePicker */,
 				E8DDE91C28899E37002B495F /* Navigation */,
 				E8CFD09C28787DE20011AD33 /* Loader */,
 				E8CFD08628786F100011AD33 /* Login */,
@@ -253,13 +257,13 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		E8CFD0752874BB850011AD33 /* Extensions */ = {
+		E8CFD0752874BB850011AD33 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				E8CFD07A2874BC800011AD33 /* XCUIElement+Extension.swift */,
-				E8DDE91F2889A191002B495F /* XCTest+Extension.swift */,
+				E8DC240F288C4B790053CB88 /* Protocols */,
+				E8DC240E288C4B6E0053CB88 /* Extensions */,
 			);
-			path = Extensions;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		E8CFD0772874BBB30011AD33 /* BMICalc */ = {
@@ -316,6 +320,7 @@
 				E8CFD0A02878ABAB0011AD33 /* LoginScreenTestData.swift */,
 				E8DDE9212889A36D002B495F /* BMIScreenTestData.swift */,
 				E8364066288B432E0066F501 /* SecretScreenTestData.swift */,
+				E8DC240C288C3ECD0053CB88 /* DatePickerScreenTestData.swift */,
 			);
 			path = TestData;
 			sourceTree = "<group>";
@@ -326,6 +331,40 @@
 				E8CFD0A42878B0050011AD33 /* AllTests.xctestplan */,
 			);
 			path = TestPlans;
+			sourceTree = "<group>";
+		};
+		E8DC2404288C376D0053CB88 /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				E8DC2405288C37820053CB88 /* DatePickerScreen.swift */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
+		E8DC2407288C3A340053CB88 /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				E8DC2408288C3A410053CB88 /* DatePickerTests.swift */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
+		E8DC240E288C4B6E0053CB88 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E8DC240A288C3B320053CB88 /* Date+Extension.swift */,
+				E8DDE91F2889A191002B495F /* XCTest+Extension.swift */,
+				E8CFD07A2874BC800011AD33 /* XCUIElement+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E8DC240F288C4B790053CB88 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E83507682889DC4900B1AB9D /* TabBarProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		E8DDE91C28899E37002B495F /* Navigation */ = {
@@ -476,6 +515,7 @@
 				E8CFD08C287873460011AD33 /* GreenButton.swift in Sources */,
 				E8CFD08F2878747A0011AD33 /* Colors+Extension.swift in Sources */,
 				E8CFD091287877910011AD33 /* ActivityIndicator.swift in Sources */,
+				E8DC2403288C348B0053CB88 /* DatePickerView.swift in Sources */,
 				E8CFD07228744EC90011AD33 /* LoginPage.swift in Sources */,
 				E8CFD06E287440280011AD33 /* BMICalc.swift in Sources */,
 				E8364054288B29490066F501 /* DeeplinkManager.swift in Sources */,
@@ -503,11 +543,15 @@
 				E8CFD0A12878ABAB0011AD33 /* LoginScreenTestData.swift in Sources */,
 				E8CFD08528786AE20011AD33 /* LoginTests.swift in Sources */,
 				E8CFD09B28787DB20011AD33 /* ActivityIndicatorTests.swift in Sources */,
+				E8DC240D288C3ECD0053CB88 /* DatePickerScreenTestData.swift in Sources */,
+				E8DC2406288C37820053CB88 /* DatePickerScreen.swift in Sources */,
 				E8CFD08828786F1D0011AD33 /* LoginScreen.swift in Sources */,
+				E8DC240B288C3B320053CB88 /* Date+Extension.swift in Sources */,
 				E836405E288B2FF30066F501 /* SafariScreen.swift in Sources */,
 				E8DDE9202889A191002B495F /* XCTest+Extension.swift in Sources */,
 				E8CFD09E28787DF10011AD33 /* LoaderScreen.swift in Sources */,
 				E83507692889DC4900B1AB9D /* TabBarProtocol.swift in Sources */,
+				E8DC2409288C3A410053CB88 /* DatePickerTests.swift in Sources */,
 				E8364059288B2DB00066F501 /* SecretScreen.swift in Sources */,
 				E836405C288B2F720066F501 /* DeepLinkTests.swift in Sources */,
 				E8CFD05D287374B10011AD33 /* BMICalcTests.swift in Sources */,

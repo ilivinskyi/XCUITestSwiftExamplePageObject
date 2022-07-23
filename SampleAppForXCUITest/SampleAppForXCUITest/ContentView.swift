@@ -23,6 +23,10 @@ struct ContentView: View {
                 .tabItem {
                     Label("Loader", systemImage: "star.leadinghalf.filled")
                 }
+            DatePickerView()
+                .tabItem {
+                    Label("Date", systemImage: "calendar")
+                }
         }
     }
     

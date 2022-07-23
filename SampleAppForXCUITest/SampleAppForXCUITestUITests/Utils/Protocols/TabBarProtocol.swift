@@ -11,6 +11,7 @@ protocol TabBarProtocol {
     func tapBMI() -> BMIScreen
     func tapLogin() -> LoginScreen
     func tapLoader() -> LoaderScreen
+    func tapDate() -> DatePickerScreen
 }
 
 extension TabBarProtocol {
@@ -27,5 +28,10 @@ extension TabBarProtocol {
     @discardableResult func tapLoader() -> LoaderScreen {
         XCUIApplication().buttons["Loader"].waitAndTap()
         return LoaderScreen()
+    }
+    
+    @discardableResult func tapDate() -> DatePickerScreen {
+        XCUIApplication().buttons["Date"].waitAndTap()
+        return DatePickerScreen()
     }
 }
