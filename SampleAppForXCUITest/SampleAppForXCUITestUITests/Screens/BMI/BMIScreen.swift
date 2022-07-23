@@ -2,7 +2,7 @@
 //  BMIScreen.swift
 //  SampleAppForXCUITestUITests
 //
-//  Created by Ihor Livinskyi on 05.07.2022.
+//  Created by IL on 05.07.2022.
 //
 
 import XCTest
