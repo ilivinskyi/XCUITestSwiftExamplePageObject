@@ -11,8 +11,7 @@ struct BMICalc: View {
     
     @State private var height: Double = 0.0
     @State private var weight: Double = 0.0
-    @State private var bmiValue: Double = 0.0
-    @State private var resultHidden: Bool = true
+    @State private var bmiValue: String = ""
     
     var body: some View {
         VStack {
@@ -41,25 +40,17 @@ struct BMICalc: View {
             }.padding()
             Spacer()
             VStack {
-                if !resultHidden {
-                    VStack {
-                        Text("Your height is: \(String(format: "%.1f", height))cm")
-                            .accessibilityIdentifier("usersHeightLabel")
-                        Text("Your weight is: \(String(format: "%.1f", weight))kg")
-                            .accessibilityIdentifier("usersWeightLabel")
-                        Text(String(format: "%.1f", bmiValue * 100))
-                            .font(.title)
-                            .fontWeight(.heavy)
-                            .foregroundColor(.red)
-                            .padding()
-                            .frame(height: 0.0)
-                            .accessibilityIdentifier("usersBMI")
-                    }
-                }
-                
+                Spacer()
+                Text(bmiValue)
+                    .font(.title)
+                    .fontWeight(.heavy)
+                    .foregroundColor(.red)
+                    .padding()
+                    .frame(height: 0.0)
+                    .accessibilityIdentifier("usersBMI")
+                Spacer()
                 Button(action: {
-                    bmiValue = calculateBMI()
-                    resultHidden = false
+                    bmiValue = String(format: "%.1f", calculateBMI() * 100)
                 }) {
                     GreenButton(buttonText: "Calculate BMI")
                 }
