@@ -2,7 +2,7 @@
 //  SampleAppForXCUITestTests.swift
 //  SampleAppForXCUITestTests
 //
-//  Created by Ihor Livinskyi on 04.07.2022.
+//  Created by IL on 04.07.2022.
 //
 
 import XCTest

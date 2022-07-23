@@ -2,7 +2,7 @@
 //  LoginTests.swift
 //  SampleAppForXCUITestUITests
 //
-//  Created by Ihor Livinskyi on 08.07.2022.
+//  Created by IL on 08.07.2022.
 //
 
 import XCTest

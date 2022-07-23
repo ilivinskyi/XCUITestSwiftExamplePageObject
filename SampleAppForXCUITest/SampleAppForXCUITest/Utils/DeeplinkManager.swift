@@ -2,7 +2,7 @@
 //  DeeplinkManager.swift
 //  SampleAppForXCUITest
 //
-//  Created by Ihor Livinskyi on 22.07.2022.
+//  Created by IL on 22.07.2022.
 //
 
 import Foundation
