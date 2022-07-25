@@ -11,15 +11,21 @@ struct DatePickerView: View {
     @State private var birthDate = Date()
     
     var body: some View {
-        VStack {
-            DatePicker(selection: $birthDate, in: Date()..., displayedComponents: [.date, .hourAndMinute]) {
+        ZStack {
+            
+            LinearGradient(gradient: Gradient(colors: [.blue, .lightGray]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                .edgesIgnoringSafeArea(.all)
+            
+            VStack {
+                DatePicker(selection: $birthDate, in: Date()..., displayedComponents: [.date, .hourAndMinute]) {
+                }
+                .datePickerStyle(WheelDatePickerStyle())
+                .background(Color.blue)
+                Spacer()
+                Text("Date is \(birthDate.formatted(date: .long, time: .shortened))")
+                    .accessibilityIdentifier("selectedDate")
+                Spacer()
             }
-            .datePickerStyle(WheelDatePickerStyle())
-            .background(Color.blue)
-            Spacer()
-            Text("Date is \(birthDate.formatted(date: .long, time: .shortened))")
-                .accessibilityIdentifier("selectedDate")
-            Spacer()
         }
     }
 }

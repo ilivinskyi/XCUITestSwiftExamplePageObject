@@ -14,6 +14,18 @@
 		E836405C288B2F720066F501 /* DeepLinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836405B288B2F720066F501 /* DeepLinkTests.swift */; };
 		E836405E288B2FF30066F501 /* SafariScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836405D288B2FF30066F501 /* SafariScreen.swift */; };
 		E8364067288B432E0066F501 /* SecretScreenTestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8364066288B432E0066F501 /* SecretScreenTestData.swift */; };
+		E8532DC8288EC05D00640666 /* Drizzle.json in Resources */ = {isa = PBXBuildFile; fileRef = E8532DC2288EC05D00640666 /* Drizzle.json */; };
+		E8532DC9288EC05D00640666 /* Clear.json in Resources */ = {isa = PBXBuildFile; fileRef = E8532DC3288EC05D00640666 /* Clear.json */; };
+		E8532DCA288EC05D00640666 /* Rain.json in Resources */ = {isa = PBXBuildFile; fileRef = E8532DC4288EC05D00640666 /* Rain.json */; };
+		E8532DCB288EC05D00640666 /* Thunderstorm.json in Resources */ = {isa = PBXBuildFile; fileRef = E8532DC5288EC05D00640666 /* Thunderstorm.json */; };
+		E8532DCC288EC05D00640666 /* Clouds.json in Resources */ = {isa = PBXBuildFile; fileRef = E8532DC6288EC05D00640666 /* Clouds.json */; };
+		E8532DCD288EC05D00640666 /* Snow.json in Resources */ = {isa = PBXBuildFile; fileRef = E8532DC7288EC05D00640666 /* Snow.json */; };
+		E8532DCF288EC07600640666 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8532DCE288EC07600640666 /* LottieView.swift */; };
+		E8532DD1288EC08700640666 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8532DD0288EC08700640666 /* WeatherModel.swift */; };
+		E8532DD3288EC09700640666 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8532DD2288EC09700640666 /* WeatherViewModel.swift */; };
+		E8532DD6288EC0B600640666 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E8532DD5288EC0B600640666 /* Lottie */; };
+		E8532DD8288EC0D800640666 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8532DD7288EC0D800640666 /* WeatherView.swift */; };
+		E8532DDB288EC15200640666 /* WeatherScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8532DDA288EC15200640666 /* WeatherScreen.swift */; };
 		E8CFD040287374AF0011AD33 /* SampleAppForXCUITestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD03F287374AF0011AD33 /* SampleAppForXCUITestApp.swift */; };
 		E8CFD042287374AF0011AD33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CFD041287374AF0011AD33 /* ContentView.swift */; };
 		E8CFD044287374B10011AD33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8CFD043287374B10011AD33 /* Assets.xcassets */; };
@@ -70,6 +82,17 @@
 		E836405B288B2F720066F501 /* DeepLinkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkTests.swift; sourceTree = "<group>"; };
 		E836405D288B2FF30066F501 /* SafariScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariScreen.swift; sourceTree = "<group>"; };
 		E8364066288B432E0066F501 /* SecretScreenTestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretScreenTestData.swift; sourceTree = "<group>"; };
+		E8532DC2288EC05D00640666 /* Drizzle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Drizzle.json; sourceTree = "<group>"; };
+		E8532DC3288EC05D00640666 /* Clear.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Clear.json; sourceTree = "<group>"; };
+		E8532DC4288EC05D00640666 /* Rain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Rain.json; sourceTree = "<group>"; };
+		E8532DC5288EC05D00640666 /* Thunderstorm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Thunderstorm.json; sourceTree = "<group>"; };
+		E8532DC6288EC05D00640666 /* Clouds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Clouds.json; sourceTree = "<group>"; };
+		E8532DC7288EC05D00640666 /* Snow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Snow.json; sourceTree = "<group>"; };
+		E8532DCE288EC07600640666 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		E8532DD0288EC08700640666 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		E8532DD2288EC09700640666 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		E8532DD7288EC0D800640666 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		E8532DDA288EC15200640666 /* WeatherScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherScreen.swift; sourceTree = "<group>"; };
 		E8CFD03C287374AF0011AD33 /* SampleAppForXCUITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleAppForXCUITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8CFD03F287374AF0011AD33 /* SampleAppForXCUITestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppForXCUITestApp.swift; sourceTree = "<group>"; };
 		E8CFD041287374AF0011AD33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8532DD6288EC0B600640666 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +178,51 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		E8532DBE288EC03500640666 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E8532DD0288EC08700640666 /* WeatherModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E8532DBF288EC03A00640666 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E8532DD2288EC09700640666 /* WeatherViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E8532DC0288EC03F00640666 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				E8532DC3288EC05D00640666 /* Clear.json */,
+				E8532DC6288EC05D00640666 /* Clouds.json */,
+				E8532DC2288EC05D00640666 /* Drizzle.json */,
+				E8532DC4288EC05D00640666 /* Rain.json */,
+				E8532DC7288EC05D00640666 /* Snow.json */,
+				E8532DC5288EC05D00640666 /* Thunderstorm.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		E8532DC1288EC04400640666 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E8CFD08E2878747A0011AD33 /* Colors+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E8532DD9288EC14700640666 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				E8532DDA288EC15200640666 /* WeatherScreen.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
 		E8CFD033287374AF0011AD33 = {
 			isa = PBXGroup;
 			children = (
@@ -177,9 +246,12 @@
 		E8CFD03E287374AF0011AD33 /* SampleAppForXCUITest */ = {
 			isa = PBXGroup;
 			children = (
+				E8532DC1288EC04400640666 /* Extensions */,
+				E8532DC0288EC03F00640666 /* Animations */,
+				E8532DBF288EC03A00640666 /* ViewModels */,
+				E8532DBE288EC03500640666 /* Models */,
 				E8364052288B29380066F501 /* Utils */,
 				E8CFD06A287376790011AD33 /* Views */,
-				E8CFD08E2878747A0011AD33 /* Colors+Extension.swift */,
 				E8CFD03F287374AF0011AD33 /* SampleAppForXCUITestApp.swift */,
 				E8CFD041287374AF0011AD33 /* ContentView.swift */,
 				E8CFD043287374B10011AD33 /* Assets.xcassets */,
@@ -226,6 +298,8 @@
 				E8CFD090287877910011AD33 /* ActivityIndicator.swift */,
 				E8364055288B2A650066F501 /* SecretView.swift */,
 				E8DC2402288C348B0053CB88 /* DatePickerView.swift */,
+				E8532DCE288EC07600640666 /* LottieView.swift */,
+				E8532DD7288EC0D800640666 /* WeatherView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -246,6 +320,7 @@
 		E8CFD0742874BB7F0011AD33 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				E8532DD9288EC14700640666 /* Weather */,
 				E8364057288B2DA50066F501 /* Other */,
 				E8DC2404288C376D0053CB88 /* DatePicker */,
 				E8DDE91C28899E37002B495F /* Navigation */,
@@ -392,6 +467,7 @@
 			);
 			name = SampleAppForXCUITest;
 			packageProductDependencies = (
+				E8532DD5288EC0B600640666 /* Lottie */,
 			);
 			productName = SampleAppForXCUITest;
 			productReference = E8CFD03C287374AF0011AD33 /* SampleAppForXCUITest.app */;
@@ -466,6 +542,7 @@
 			);
 			mainGroup = E8CFD033287374AF0011AD33;
 			packageReferences = (
+				E8532DD4288EC0B600640666 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = E8CFD03D287374AF0011AD33 /* Products */;
 			projectDirPath = "";
@@ -483,6 +560,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8532DCD288EC05D00640666 /* Snow.json in Resources */,
+				E8532DCB288EC05D00640666 /* Thunderstorm.json in Resources */,
+				E8532DC8288EC05D00640666 /* Drizzle.json in Resources */,
+				E8532DCA288EC05D00640666 /* Rain.json in Resources */,
+				E8532DC9288EC05D00640666 /* Clear.json in Resources */,
+				E8532DCC288EC05D00640666 /* Clouds.json in Resources */,
 				E8CFD047287374B10011AD33 /* Preview Assets.xcassets in Resources */,
 				E8CFD044287374B10011AD33 /* Assets.xcassets in Resources */,
 			);
@@ -510,14 +593,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8364056288B2A650066F501 /* SecretView.swift in Sources */,
+				E8532DD3288EC09700640666 /* WeatherViewModel.swift in Sources */,
 				E8CFD042287374AF0011AD33 /* ContentView.swift in Sources */,
 				E8CFD040287374AF0011AD33 /* SampleAppForXCUITestApp.swift in Sources */,
 				E8CFD08C287873460011AD33 /* GreenButton.swift in Sources */,
+				E8532DD8288EC0D800640666 /* WeatherView.swift in Sources */,
 				E8CFD08F2878747A0011AD33 /* Colors+Extension.swift in Sources */,
 				E8CFD091287877910011AD33 /* ActivityIndicator.swift in Sources */,
 				E8DC2403288C348B0053CB88 /* DatePickerView.swift in Sources */,
 				E8CFD07228744EC90011AD33 /* LoginPage.swift in Sources */,
 				E8CFD06E287440280011AD33 /* BMICalc.swift in Sources */,
+				E8532DCF288EC07600640666 /* LottieView.swift in Sources */,
+				E8532DD1288EC08700640666 /* WeatherModel.swift in Sources */,
 				E8364054288B29490066F501 /* DeeplinkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -544,6 +631,7 @@
 				E8CFD08528786AE20011AD33 /* LoginTests.swift in Sources */,
 				E8CFD09B28787DB20011AD33 /* ActivityIndicatorTests.swift in Sources */,
 				E8DC240D288C3ECD0053CB88 /* DatePickerScreenTestData.swift in Sources */,
+				E8532DDB288EC15200640666 /* WeatherScreen.swift in Sources */,
 				E8DC2406288C37820053CB88 /* DatePickerScreen.swift in Sources */,
 				E8CFD08828786F1D0011AD33 /* LoginScreen.swift in Sources */,
 				E8DC240B288C3B320053CB88 /* Date+Extension.swift in Sources */,
@@ -859,6 +947,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E8532DD4288EC0B600640666 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E8532DD5288EC0B600640666 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8532DD4288EC0B600640666 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E8CFD034287374AF0011AD33 /* Project object */;
 }

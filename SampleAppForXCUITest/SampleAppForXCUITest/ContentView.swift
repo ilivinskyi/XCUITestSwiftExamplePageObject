@@ -27,7 +27,11 @@ struct ContentView: View {
                 .tabItem {
                     Label("Date", systemImage: "calendar")
                 }
-        }
+            WeatherView()
+                .tabItem {
+                    Label("Weather", systemImage: "thermometer.sun")
+                }
+        }.accentColor(.orange)
     }
     
     

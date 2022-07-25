@@ -18,42 +18,56 @@ struct LoginPage: View {
     @State var incorrectCredentials: Bool = false
     
     var body: some View {
-        VStack {
-            WelcomeText()
-            TextField("Username", text: $username)
-                .padding()
-                .background(Color.lightGray)
-                .cornerRadius(5.0)
-                .padding(.bottom, 20)
-                .accessibilityIdentifier("usernameField")
-            SecureField("Password", text: $password)
-                .padding()
-                .background(Color.lightGray)
-                .cornerRadius(5.0)
-                .padding(.bottom, 20)
-                .accessibilityIdentifier("passwordField")
-            Button(action: {
-                checkCredentials()
-            }) {
-                GreenButton(buttonText: "Login")
-            }
-            .accessibilityIdentifier("loginButton")
-            if incorrectCredentials {
-                ErrorText(message: "Worng password or email")
-            }
+        ZStack {
             
-            if emptyCredentials {
-                ErrorText(message: "Please email and password")
-            }
+            LinearGradient(gradient: Gradient(colors: [.blue, .lightGray]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                .edgesIgnoringSafeArea(.all)
             
-            if correctCredentials {
-                Text("Correct!")
-                    .font(.title2)
-                    .foregroundColor(.green)
-                    .accessibilityIdentifier("messageText")
+            VStack {
+                WelcomeText()
+                HStack {
+                    Spacer()
+                    TextField("Username", text: $username)
+                        .padding()
+                        .background(Color.lightGray)
+                        .cornerRadius(5.0)
+                        .padding(.bottom, 20)
+                        .accessibilityIdentifier("usernameField")
+                    Spacer()
+                }
+                HStack {
+                    Spacer()
+                    SecureField("Password", text: $password)
+                        .padding()
+                        .background(Color.lightGray)
+                        .cornerRadius(5.0)
+                        .padding(.bottom, 20)
+                        .accessibilityIdentifier("passwordField")
+                    Spacer()
+                }
+                Button(action: {
+                    checkCredentials()
+                }) {
+                    GreenButton(buttonText: "Login")
+                }
+                .accessibilityIdentifier("loginButton")
+                if incorrectCredentials {
+                    ErrorText(message: "Worng password or email")
+                }
+                
+                if emptyCredentials {
+                    ErrorText(message: "Please email and password")
+                }
+                
+                if correctCredentials {
+                    Text("Correct!")
+                        .font(.title2)
+                        .foregroundColor(.green)
+                        .accessibilityIdentifier("messageText")
+                }
             }
+            .padding()
         }
-        .padding()
     }
     
     private func checkCredentials() {

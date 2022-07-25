@@ -12,14 +12,20 @@ struct SecretView: View {
     var value: String
     
     var body: some View {
-        VStack {
-            Text("Deeplink opened")
-                .font(.title)
-                .accessibilityIdentifier("deeplinkSuccessMessage")
-            Text("My deeplink value is: \(self.value)")
-                .font(.title2)
-                .accessibilityIdentifier("deeplinkValue")
-        }.background(Color.green)
+        ZStack {
+            
+            LinearGradient(gradient: Gradient(colors: [.blue, .lightGray]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                .edgesIgnoringSafeArea(.all)
+            
+            VStack {
+                Text("Deeplink opened")
+                    .font(.title)
+                    .accessibilityIdentifier("deeplinkSuccessMessage")
+                Text("My deeplink value is: \(self.value)")
+                    .font(.title2)
+                    .accessibilityIdentifier("deeplinkValue")
+            }.background(Color.green)
+        }
     }
 }
 
