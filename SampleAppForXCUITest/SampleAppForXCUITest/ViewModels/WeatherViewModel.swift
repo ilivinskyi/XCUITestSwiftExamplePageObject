@@ -2,7 +2,7 @@
 //  WeatherViewModel.swift
 //  SampleAppForXCUITest
 //
-//  Created by Ihor Livinskyi on 25.07.2022.
+//  Created by IL on 25.07.2022.
 //
 
 import SwiftUI
